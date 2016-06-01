@@ -28,43 +28,41 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Wyślij = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
-            // Wyślij
+            // button1
             // 
-            this.Wyślij.Location = new System.Drawing.Point(297, 357);
-            this.Wyślij.Name = "Wyślij";
-            this.Wyślij.Size = new System.Drawing.Size(75, 23);
-            this.Wyślij.TabIndex = 0;
-            this.Wyślij.Text = "button1";
-            this.Wyślij.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(299, 352);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Wyślij";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(28, 33);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(255, 20);
+            this.textBox1.Size = new System.Drawing.Size(267, 20);
             this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(530, 269);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 2;
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(479, 33);
+            this.numericUpDown1.Location = new System.Drawing.Point(372, 34);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            65535,
+            0,
+            0,
+            0});
             this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 20);
+            this.numericUpDown1.Size = new System.Drawing.Size(258, 20);
             this.numericUpDown1.TabIndex = 3;
             // 
             // listBox1
@@ -77,9 +75,9 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(77, 315);
+            this.textBox3.Location = new System.Drawing.Point(25, 269);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(605, 20);
             this.textBox3.TabIndex = 5;
             // 
             // Form1
@@ -90,9 +88,8 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.numericUpDown1);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Wyślij);
+            this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
@@ -103,9 +100,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button Wyślij;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.TextBox textBox3;
